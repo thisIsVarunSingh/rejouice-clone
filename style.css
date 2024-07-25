@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: rejouice;
+    src: local("Rejouice-Headline");
+}
+
+@font-face {
+    font-family: nb;
+    src: local("NB International Pro Book");
+}
+
+body{
+    width: 100%;
+    font-family: nb;
+}
+.page1 > video{
+    width: 100%;
+}
+
+.mousefollower{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    transition: all ease-out;
+}
+
+.header{
+    position: absolute;
+    top:2vh;
+    margin: auto 5%;
+    height: 100vh;
+    color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index:5;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: nb;
+    font-size: 18px;
+}
+
+.heading{
+    font-family: rejouice;
+    font-size: 23vw;
+    font-weight: 400;
+}
+.heading span{
+    margin-right: 5px;
+}
+
+.page2{
+    width: 90%;
+    margin: 30px 5%;
+}
+
+.page2-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.page2-content{
+    font-size: 50px;
+    margin-top: 15px;
+}
